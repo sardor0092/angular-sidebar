@@ -1,0 +1,138 @@
+.chevron::before {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  vertical-align: top;
+  width: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  transition: 0.5s;
+
+  width: 60px;
+
+  &.ex1 {
+    width: 150px;
+
+    .header {
+      h2 {
+        margin-left: 0;
+        padding: 10px;
+      }
+
+      .chevron {
+        margin-left: 0;
+        &::before {
+          transform: rotate(-130deg);
+          padding: 20px;
+        }
+      }
+    }
+
+    .content {
+      .link {
+        .content {
+          .title {
+
+            max-width: 100px;
+          
+
+
+
+
+          }
+
+          .icon {
+            margin-right: 5px;
+          
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 20px;
+
+  }
+
+
+  background-color: #333;
+  color: white;
+
+  .header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: black;
+
+  }
+
+
+
+  .chevron {
+
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    min-width: 20px;
+
+
+
+  }
+ 
+
+}
+
+
+.content {
+    .link {
+        .content {
+            padding-left: 10px;
+
+
+            & .active {
+                background-color: dodgerblue;
+
+            }
+
+
+        }
+    }
+}
+
+.content {
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+
+.icon {
+    float: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+
+.title {
+
+  flex: 1;
+  max-width: 0px;
+ 
+  color: white;
+  
+}
