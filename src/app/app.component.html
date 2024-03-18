@@ -1,10 +1,6 @@
-<app-sidebar [isExpend]="sidebarEx"  (toggle)="sidebarEx = !sidebarEx"></app-sidebar>
+<button (click)="createPost()">Post</button> <br>
+
+<button (click)="updatePost(1)">Update</button>
 
 
-<div class="content"  [ngClass]="{'sidebarEx':sidebarEx}">
-
-
-    <!-- <router-outlet></router-outlet> -->
-
-
-</div>
+<button (click)="deletePost(1)">Delete</button>
